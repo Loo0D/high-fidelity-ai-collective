@@ -24,6 +24,7 @@ const { Content } = await entry.render();
   <article class="container">
     <header class="page-header">
       <h1>{entry.data.title}</h1>
+      <p>by {entry.data.author}</p>
       <p class="post-card-date">
         Posted on {entry.data.pubDate.toLocaleDateString('en-us', {
           year: 'numeric',
