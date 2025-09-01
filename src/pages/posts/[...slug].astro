@@ -1,0 +1,39 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection('posts');
+  return allPosts.map(entry => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { slug } = Astro.params;
+const entry = await getEntry('posts', slug as string);
+
+if (entry === undefined) {
+  return new Response('Post not found', { status: 404 });
+}
+
+const { Content } = await entry.render();
+---
+
+<Layout title={entry.data.title}>
+  <article class="container">
+    <header class="page-header">
+      <h1>{entry.data.title}</h1>
+      <p class="post-card-date">
+        Posted on {entry.data.pubDate.toLocaleDateString('en-us', {
+          year: 'numeric',
+          month: 'short',
+          day: 'numeric',
+        })}
+      </p>
+    </header>
+    <div class="prose">
+      <Content />
+    </div>
+  </article>
+</Layout>

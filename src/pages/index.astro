@@ -1,11 +1,68 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="The High- Fidelity AI Collective">
+  <div class="container">
+    <!-- Hero Section -->
+    <section class="hero text-center">
+      <!-- <img src="/logo.png" alt="Logo"/> -->
+      <h1>The High-Fidelity AI Collective</h1>
+      <p>
+        A community dedicated to verifiable accuracy in high-stakes AI workflows.
+      </p>
+    </section>
+
+    <!-- Manifesto Section -->
+    <section class="manifesto">
+      <h2 class="text-center">Consistently reliable and accurate AI for forensic or high stakes systems.</h2>
+      <div class="manifesto-grid">
+        <p>
+          We are experimenting with agentic AI systems in high-stakes environments like finance, healthcare and government. The cost of failure is high, and the cost of late failure detection is even higher.
+        </p>
+          
+          <p>This is what keeps us awake at night:</p>
+
+        <ul>
+        <li>Can we make non-deterministic systems reliable enough?</li>
+        <li>How do we design systems that can detect AI failures in the agent chains?</li>
+        <li>What LLM parameters should we be optimizing for?</li>
+        <li>Is prompt engineering effective, and to what extent?</li>
+        <li>How do we manage context to ensure consistent attention?</li>
+        <li>Benchmarking accuracy and reliability in agentic systems potentially employing n+1 models from multiple vendors?</li>
+        </ul>
+          
+        <div>
+          <h2>Our Principles</h2>
+          <div>
+            <h3>1. Open by Default</h3>
+            <p>
+              The challenges of high-stakes AI are too great for any single entity to solve. There are many of us working on this use case, and it is wishful thinking to assume that one day hyperscalers will solve it all for us and that their goals align with ours. This is an open space to share knowledge, tools, and discussions in the great tradition of open source.
+            </p>
+          </div>
+          <div>
+            <h3>2. Contribution is Expertise</h3>
+            <p>
+              We value practical knowledge and working code over credentials. LLM theory is great but here we are focused on practical solutions. 
+            </p>
+          </div>
+          <div>
+            <h3>3. Non-commercial</h3>
+            <p>
+              We are not here to sell you anything. This is not an aspiring standards body, not a consultancy, not a vendor. This is a collective of experts sharing what works to improve accuracy andreliabilityin the a rapidly evolving field of high-stakes AI.
+            </p>
+          </div>
+          
+        </div>
+        <div>
+          <h2>What Next?</h2>
+          <p>
+            Have a look at our <a href="/posts">posts</a> to see if there's anything that interests you. The site is powered by GitHub, you can contribute by forking the repo and creating a pull request. 
+            
+            <!-- Alternatively, join the <a href="https://discord.gg/thehighfidelityaicollective">Discord</a> and start a discussion. -->
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
 </Layout>
