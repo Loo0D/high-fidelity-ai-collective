@@ -4,7 +4,7 @@ import deno from "@astrojs/deno";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://the-high-fidelity-ai-collective.github.io',
+  site: 'https://loo0d.github.io/high-fidelity-ai-collective/',
   base: '/the-high-fidelity-ai-collective',
   output: "static",
   markdown: {
