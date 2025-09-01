@@ -1,11 +1,9 @@
 ---
-title: "RAG is basically keyword search - is that good enough?"
+title: "To RAG or not to RAG - This is the question. And the answer is \"No\"."
 pubDate: 2024-09-01
-description: "A healthy dose of hype emerged over RAG (Retrieval Augmented Generation) and Vector DBs."
+description: "A healthy dose of hype emerged over RAG (Retrieval Augmented Generation) and Vector DBs. Is it actually any good?"
 author: "Loo0D"
 ---
-
-# To RAG or not to RAG - This is the question. And the answer is "No".
 
 Allow me to declare my bias at the start. RAG is just keyword search. Pulling out chunks of text from across the document which contain some search terms doesn't appear to be a very sensible approach to a forensic document review. 
 
