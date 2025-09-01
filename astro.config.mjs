@@ -4,13 +4,7 @@ import deno from "@astrojs/deno";
 
 // https://astro.build/config
 export default defineConfig({
-  output: "server",
-  adapter: deno(),
-  image: {
-    service: {
-      entrypoint: 'astro/assets/services/noop',
-    },
-  },
+  output: "static",
   markdown: {
     shikiConfig: {
       theme: 'github-dark',
