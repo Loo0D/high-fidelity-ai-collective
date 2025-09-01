@@ -23,8 +23,11 @@ jobs:
         with:
           deno-version: v2.x
 
+      - name: Install dependencies
+        run: deno install --allow-scripts
+
       - name: Build Astro site
-        run: deno run -A  build
+        run: deno task build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
