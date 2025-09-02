@@ -145,15 +145,20 @@ p { margin-bottom: 1rem; }
   border: 1px solid var(--border-color);
   border-radius: 0.5rem;
   transition: all 0.2s ease;
+  color: var(--muted-foreground);
 }
 .post-card:hover {
   background-color: #FFFFFF08;
   border-color: var(--accent);
 }
 .post-card h2 {
-  color: var(--accent);
+  color: var(--foreground);
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
+  transition: color 0.2s ease;
+}
+.post-card:hover h2 {
+  color: var(--accent);
 }
 .post-card-date {
   color: var(--muted-foreground);
@@ -163,12 +168,12 @@ p { margin-bottom: 1rem; }
 /* 5. Page-Specific Styles */
 
 /* Landing Page */
-.hero { padding: 2rem 0; }
+.hero { padding: 1rem 0 0; }
 .hero img { height: 16rem; margin: 0 auto 1rem; color: var(--accent); }
 .hero h1 { font-size: 3.5rem; }
 .hero p { font-size: 1.25rem; color: var(--muted-foreground); max-width: 48rem; margin: 0 auto; }
 
-.manifesto { padding: 4rem 0; }
+.manifesto { padding: 2rem 0; }
 .manifesto h2 { font-size: 2rem; margin-bottom: 2rem; }
 .manifesto-grid { display: flex; flex-direction: column; gap: 2rem; }
 .manifesto h3 { color: var(--accent); font-size: 1.25rem; }
