@@ -1,7 +1,7 @@
 ---
 title: "The Future of Documentation is Here. Rejoice!"
 pubDate: 2025-09-02
-description: "Astro Documentation Options"
+description: "Astro's \"Build with AI\" Documentaion"
 author: "Loo0D"
 ---
 
@@ -13,4 +13,6 @@ Not only does it provide you with a selection of plain-text context files, not o
 
 This is the future of documentation. I never much cared for Ctrl-F-ing through [Javadoc](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html) - though it was the absolute documentation winner in its time - and eventually Javadocs were mostly explored through the lens of the IDE. We've now taken another step forward.
 
-I am sufficiently inspired by this to one day to it here. We'll have an MCP server going with a bit RAG over this site's content - and yes, literally yesterday I said RAG was basically useless, but this isn't a forensic use case so we will give it another chance. Look forward to the day when you can take advantage of this site's collective wisdom when low-effort vibe coding your next AI integration.
+I am sufficiently inspired by this to one day to it here. We'll have an MCP server going with a bit of RAG over this site's content - and yes, literally yesterday I said RAG was basically useless, but this isn't a forensic use case so we will give it another chance. 
+
+Look forward to the day when you can take advantage of this site's collective wisdom when low-effort vibe coding your next AI integration.
